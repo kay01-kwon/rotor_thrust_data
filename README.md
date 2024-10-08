@@ -12,7 +12,10 @@ Its capacity is 3 Nm.
 
 <img src="figures/moment_front.jpg"/>
 
-# Thrust mapping
+https://github.com/user-attachments/assets/2dd4a7c1-820b-4ba2-b6f8-a8fc06fa6466
+
+
+# Thrust and moment mapping
 
 <img src="/thrust_bag/mat_folder/thrust_data.png"/>
 
@@ -67,3 +70,5 @@ $p_{M,cmd,1}$ = 2.794970022546801e-09
 $p_{M,cmd,2}$ = -3.381658997734483e-06
 
 $p_{M,cmd,3}$ = -1.029482586449117e-04.
+
+
