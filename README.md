@@ -1,5 +1,7 @@
 # rotor_thrust_data
 
+Thrust data with APC 10x4.5 propeller.
+
 # Thrust mapping
 
 <img src="/thrust_bag/mat_folder/thrust_data.png"/>
