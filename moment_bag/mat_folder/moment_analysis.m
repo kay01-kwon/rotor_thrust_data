@@ -39,6 +39,7 @@ moment_pred = p_cmd_raw(1)*cmd_domain.^2 + p_cmd_raw(2)*cmd_domain + p_cmd_raw(3
 moment_pred_rpm = p_rpm(1)*rpm_domain.^2 + p_rpm(2)*rpm_domain + p_rpm(3);
 
 figure(1)
+subplot(121)
 plot(cmd_raw_avg, loadcell_avg, '*','MarkerSize',10)
 hold on
 plot(cmd_domain, moment_pred, 'LineWidth', 2)
@@ -47,9 +48,7 @@ xlabel('cmd raw value','Interpreter','latex','FontSize',14)
 ylabel('moment $(N\cdot m)$','Interpreter','latex','FontSize',14)
 grid on;
 
-exportgraphics(gca, 'raw_vs_moment.png','Resolution',600)
-
-figure(2)
+subplot(122)
 plot(rpm_avg, loadcell_avg, '*','MarkerSize',10)
 hold on
 plot(rpm_domain, moment_pred_rpm, 'LineWidth',2)
@@ -58,4 +57,6 @@ xlabel('rotor speed (rpm)','Interpreter','latex','FontSize',14)
 ylabel('moment $(N\cdot m)$','Interpreter','latex','FontSize',14)
 grid on
 
-exportgraphics(gca, 'rpm_vs_moment.png','Resolution',600)
+set(gcf, 'position', [100, 100, 800, 300])
+
+exportgraphics(gcf, 'moment_data.png','Resolution',600)
