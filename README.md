@@ -1,6 +1,16 @@
 # rotor_thrust_data
 
-Thrust data with APC 10x4.5 propeller.
+Get thrust and moment data with APC 10x4.5 propeller.
+
+Thrust data through YZC-1B with 3 kg capacity.
+
+<img src="figures/weight_front.jpg"/>
+
+Moment data through loadcell which can measure static torque.
+
+Its capacity is 3 Nm.
+
+<img src="figures/moment_front.jpg"/>
 
 # Thrust mapping
 
