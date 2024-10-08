@@ -2,4 +2,4 @@
 
 # Thrust vs cmd raw
 
-<img src="/thrust_bag/mat_folder/rpm_vs_thrust.png"/>
+<img src="/thrust_bag/mat_folder/thrust_data.png"/>
