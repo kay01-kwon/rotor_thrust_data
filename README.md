@@ -17,19 +17,7 @@ https://github.com/user-attachments/assets/2dd4a7c1-820b-4ba2-b6f8-a8fc06fa6466
 
 # Thrust and moment mapping
 
-<img src="/thrust_bag/mat_folder/thrust_data.png"/>
-
-The mapping between cmd raw value and thrust is the following:
-
-$T = p_{T,cmd,1} cmd^2 + p_{T,cmd,2} cmd + p_{T,cmd,3}$
-
-where
-
-$p_{T,cmd,1}$ = 2.548684293700303e-09
-
-$p_{T,cmd,2}$ = -1.949391343612410e-06
-
-$p_{T,cmd,3}$ = 0.001300828508719.
+<img src="/thrust_bag2/mat_folder/thrust_data.png"/>
 
 The mapping between rpm and thrust is like the below:
 
@@ -37,11 +25,11 @@ $T = p_{T,rpm,1} cmd^2 + p_{T,rpm,2} cmd + p_{T,rpm,3}$
 
 where
 
-$p_{T,rpm,1}$ = 1.779787156470200e-09
+$p_{T,rpm,1}$ = 1.80883139637315e-09
 
-$p_{T,rpm,2}$ = -1.622235767720890e-06
+$p_{T,rpm,2}$ = -1.96222600800466e-006
 
-$p_{T,rpm,3}$ = 0.001285904172544.
+$p_{T,rpm,3}$ = 1.66928771872563e-003.
 
 # Moment mapping
 
