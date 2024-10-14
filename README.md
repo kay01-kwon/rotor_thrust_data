@@ -33,19 +33,7 @@ $p_{T,rpm,3}$ = 1.66928771872563e-003.
 
 # Moment mapping
 
-<img src="/moment_bag/mat_folder/moment_data.png"/>
-
-The relationship between cmd raw value and moment is 
-
-$M = p_{M,cmd,1} cmd^2 + p_{M,cmd,2} cmd + p_{M,cmd,3}$
-
-where
-
-$p_{M,cmd,1}$ = 4.002193404061275e-09
-
-$p_{M,cmd,2}$ = -4.057624659431308e-06
-
-$p_{M,cmd,3}$ = -8.175335006894829e-05.
+<img src="/moment_bag2/mat_folder/moment_data.png"/>
 
 The mapping between rpm and moment is 
 
@@ -53,8 +41,8 @@ $M = p_{M,rpm,1} cmd^2 + p_{M,rpm,2} cmd + p_{M,rpm,3}$
 
 where
 
-$p_{M,rpm,1}$ = 2.794970022546801e-09
+$p_{M,rpm,1}$ = 2.92066276908551e-09
 
-$p_{M,rpm,2}$ = -3.381658997734483e-06
+$p_{M,rpm,2}$ = -5.54473448895723e-006
 
-$p_{M,rpm,3}$ = -1.029482586449117e-04.
+$p_{M,rpm,3}$ = 18.2016053924933e-03.
