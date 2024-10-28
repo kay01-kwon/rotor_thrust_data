@@ -17,32 +17,24 @@ https://github.com/user-attachments/assets/2dd4a7c1-820b-4ba2-b6f8-a8fc06fa6466
 
 # Thrust and moment mapping
 
-<img src="/thrust_bag2/mat_folder/thrust_data.png"/>
+<img src="/thrust_bag2/mat_folder/thrust_data_CT.png"/>
 
 The mapping between rpm and thrust is like the below:
 
-$T = p_{T,rpm,1} cmd^2 + p_{T,rpm,2} cmd + p_{T,rpm,3}$
+$T = C_{T} \omega^2$
 
 where
 
-$p_{T,rpm,1}$ = 1.80883139637315e-09
-
-$p_{T,rpm,2}$ = -1.96222600800466e-006
-
-$p_{T,rpm,3}$ = 1.66928771872563e-003.
+$C_{T}$ = 1.481e-07 $N/\text{rpm}^2$.
 
 # Moment mapping
 
-<img src="/moment_bag2/mat_folder/moment_data.png"/>
+<img src="/moment_bag2/mat_folder/moment_data_CM.png"/>
 
 The mapping between rpm and moment is 
 
-$M = p_{M,rpm,1} cmd^2 + p_{M,rpm,2} cmd + p_{M,rpm,3}$
+$M = C_{M} \omega^2$
 
 where
 
-$p_{M,rpm,1}$ = 2.92066276908551e-09
-
-$p_{M,rpm,2}$ = -5.54473448895723e-006
-
-$p_{M,rpm,3}$ = 18.2016053924933e-03.
+$C_{M} = 2.524e-09 (N\cdot m)/\text{rpm}^2$.
