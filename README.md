@@ -25,7 +25,7 @@ $T = C_{T} \omega^2$
 
 where
 
-$C_{T}$ = 1.481e-07 $N/\text{rpm}^2$.
+$C_{T}$ = 1.481e-07 \frac{N}{\text{rpm}^2}$.
 
 # Moment mapping
 
@@ -37,4 +37,4 @@ $M = C_{M} \omega^2$
 
 where
 
-$C_{M} = 2.524e-09 (N\cdot m)/\text{rpm}^2$.
+$C_{M} = 2.524e-09 \frac{N\cdot m}{\text{rpm}^2}$.
