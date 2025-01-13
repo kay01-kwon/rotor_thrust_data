@@ -113,8 +113,8 @@ if __name__ == '__main__':
     test_rpm = np.linspace(2000,8000, 10)
     test_torque = param_opt * test_rpm**2
 
-    plt.plot(actual_rpm_avg, torque_avg, "*", label="Raw data")
-    plt.plot(test_rpm, test_torque, label="Predicted Moment")
+    plt.plot(actual_rpm_avg, torque_avg, "*", label=r"$M_{z,data}$")
+    plt.plot(test_rpm, test_torque, label=r"$M_{z,pred}$")
     plt.legend(loc='best')
     plt.title("Moment - Rotor speed (24.6°C)")
     plt.xlabel("Rotor speed (RPM)")

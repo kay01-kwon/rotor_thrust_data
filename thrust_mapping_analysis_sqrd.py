@@ -114,8 +114,8 @@ if __name__ == '__main__':
     test_rpm = np.linspace(2000,8000, 10)
     test_thrust = param_opt * test_rpm**2
 
-    plt.plot(actual_rpm_avg, thrust_avg, "*", label="Raw data")
-    plt.plot(test_rpm, test_thrust, label="Predicted thrust")
+    plt.plot(actual_rpm_avg, thrust_avg, "*", label=r"$T_{data}$")
+    plt.plot(test_rpm, test_thrust, label=r"$T_{pred}$")
     plt.legend(loc='best')
     plt.title("Thrust - Rotor speed (24.6°C)")
     plt.xlabel("Rotor speed (RPM)")
