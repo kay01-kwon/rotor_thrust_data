@@ -107,17 +107,18 @@ if __name__ == '__main__':
                                      p0=initial_guess,
                                      method='lm')
 
+    print('************ Thrust mapping result ************')
     print('The optimal of thrust of coefficient is : ', param_opt)
-    print('The covariance of moment is : ', param_cov)
+    print('The variance between predicted thrust and thrust data is : ', param_cov)
 
     test_rpm = np.linspace(2000,8000, 10)
     test_thrust = param_opt * test_rpm**2
 
     plt.plot(actual_rpm_avg, thrust_avg, "*", label="Raw data")
-    plt.plot(test_rpm, test_thrust, label="Regression")
+    plt.plot(test_rpm, test_thrust, label="Predicted thrust")
     plt.legend(loc='best')
-    plt.title("Moment - Rotor speed (24.6°C)")
+    plt.title("Thrust - Rotor speed (24.6°C)")
     plt.xlabel("Rotor speed (RPM)")
     plt.ylabel("Thrust (N)")
     plt.grid(True)
-    plt.show()
+    plt.savefig('thrust_mapping.png',dpi=600)

@@ -106,17 +106,19 @@ if __name__ == '__main__':
                                      p0=initial_guess,
                                      method='lm')
 
+    print('************ Moment mapping result ************')
     print('The optimal of moment of coefficient is : ', param_opt)
-    print('The covariance of moment is : ', param_cov)
+    print('The variance between predicted moment and moment data is : ', param_cov)
 
     test_rpm = np.linspace(2000,8000, 10)
     test_torque = param_opt * test_rpm**2
 
     plt.plot(actual_rpm_avg, torque_avg, "*", label="Raw data")
-    plt.plot(test_rpm, test_torque, label="Regression")
+    plt.plot(test_rpm, test_torque, label="Predicted Moment")
     plt.legend(loc='best')
     plt.title("Moment - Rotor speed (24.6°C)")
     plt.xlabel("Rotor speed (RPM)")
     plt.ylabel("Moment (Nm)")
     plt.grid(True)
-    plt.show()
+    # plt.show()
+    plt.savefig('moment_mapping.png',dpi=600)

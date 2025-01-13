@@ -1,0 +1,8 @@
+************ Thrust mapping result ************
+The optimal of thrust of coefficient is :  [1.46557465e-07]
+The variance between predicted thrust and thrust data is :  [[1.27624239e-18]]
+
+************ Moment mapping result ************
+The optimal of moment of coefficient is :  [2.29998134e-09]
+The variance between predicted moment and moment data is :  [[2.55683518e-22]]
+
